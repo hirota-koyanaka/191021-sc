@@ -1,0 +1,30 @@
+.slide-wrapper {
+  width: 70%;
+  height: 700px;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+}
+.slide-item {
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  transform: scale(1);
+  transition: all 1s 0s linear, transform 6s;
+}
+.slide-item img {
+  width: 100%;
+  transform: translateY(-20%);
+}
+
+.slide-item.active {
+  opacity: 1;
+
+.slide-item.zoom {
+  transform: scale(1.2); 
+}
